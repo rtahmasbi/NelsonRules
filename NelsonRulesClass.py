@@ -113,7 +113,7 @@ class NelsonRules:
                axs[i].plot(data.ix[:, 0],label='Data')
                axs[i].plot(data.ix[:, 0][(data.ix[:, i+1] == True)], 'ro',label='Violations')
                #axs[i].set_title(columns[i]+' K='+str(self.rule_dict[i+1])) uncomment to activate K in title per rule
-               print(columns[i])
+               #print(columns[i])
                axs[i].set_title(columns[i]+' '+self.rule_expl[str(self.__glob_rules_.index(columns[i])+1)])
                mean = data.ix[:,0].mean()
                std = data.ix[:,0].std()
